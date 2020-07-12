@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+//import logo from '../images/logo.svg'
 import {FaAlignRight} from 'react-icons/fa'
 import {Link} from 'react-router-dom'
 import { useSelector } from 'react-redux';
@@ -40,18 +41,18 @@ export default function Navbar(){
             {userInfo && userInfo.isAdmin && (
               <>
                 <Link href="#" 
-                onClick={() => setisOpen1(!isOpen1)} 
+                //onClick={() => setisOpen1(!isOpen1)} 
                 >Admin</Link>
             
                 <ul 
-                className={isOpen1 ? "show-nav1" : "hide-nav"}
+                // className={isOpen1 ? "show-nav1" : "hide-nav"}
                 >
                   <li>
                     <Link to="/orders" 
-                    onClick={() => setisOpen1(!isOpen1) && setisOpen(!isOpen)}
+                    //onClick={() => setisOpen1(!isOpen1) && setisOpen(!isOpen)}
                     >Orders</Link>
                     <Link to="/products" 
-                    onClick={() => setisOpen1(!isOpen1) && setisOpen(!isOpen)}
+                    //onClick={() => setisOpen1(!isOpen1) && setisOpen(!isOpen)}
                     >Products</Link>
                   </li>
                 </ul>
