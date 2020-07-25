@@ -10,3 +10,4 @@ export default {
 };
 
 
+//mongodb+srv://Ram:<password>@cluster0.d03wp.mongodb.net/<dbname>?retryWrites=true&w=majority

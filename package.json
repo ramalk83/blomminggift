@@ -1,4 +1,5 @@
 
+
 {
   "name": "amazona",
   "version": "1.0.0",
@@ -29,12 +30,12 @@
   },
   "scripts": {
     "start": "nodemon --watch backend --exec babel-node backend/server.js",
-    "build": "rd /s /q dist && babel backend -d dist",
-    "heroku-postbuild": "npm run build && cd frontend && npm install && npm run build"
+    "build": "rm -rf || rmdir /s dist && babel backend -d dist",
+    "heroku-postbuild": "npm run build && cd client && npm install && npm run build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/basir/amazona.git"
+    "url": "git+https://github.com/ramalk83/blomminggift"
   },
   "author": "",
   "license": "ISC",
@@ -47,18 +48,4 @@
     "npm": "6.9.0"
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
